@@ -37,6 +37,8 @@ Edit `quiz.js` and add an entry to the `quizData` array:
 
 All questions are also listed in [QUESTIONS.md](./QUESTIONS.md) for easy reading and contribution.
 
+> **Note:** `QUESTIONS.md` is auto-generated from `quiz.js` by a GitHub Action on every push. Do not edit it directly — changes will be overwritten.
+
 ## License
 
 MIT

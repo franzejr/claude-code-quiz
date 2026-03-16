@@ -262,6 +262,17 @@ const quizData = [
     ],
     correct: 1,
     explanation: "/init analyzes your project and generates a CLAUDE.md file with relevant context and instructions for Claude to follow in that project."
+  },
+  {
+    question: "Which hook event fires before Claude executes a tool?",
+    options: [
+      "PreToolUse",
+      "BeforeTool",
+      "OnToolStart",
+      "ToolRequest"
+    ],
+    correct: 0,
+    explanation: "PreToolUse fires before each tool call. Exiting with a non-zero code blocks the tool; exiting with zero allows it to proceed."
   }
 ];
 

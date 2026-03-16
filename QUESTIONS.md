@@ -1,6 +1,6 @@
 # Quiz Questions
 
-All questions in the Claude Code Quiz. To add new ones, edit `quiz.js` and add an entry to the `quizData` array.
+All questions in the Claude Code Quiz. Edit `quiz.js` to add or change questions, then run `node generate-questions.js` to update this file.
 
 ---
 
@@ -97,7 +97,7 @@ All questions in the Claude Code Quiz. To add new ones, edit `quiz.js` and add a
 - Using {input} placeholders
 - **Using $ARGUMENTS placeholder** ✓
 - Using %args% variables
-- Using \<param\> tags
+- Using <param> tags
 
 > Custom commands use the $ARGUMENTS placeholder, which gets replaced with whatever text you provide after the command name.
 
@@ -194,7 +194,7 @@ All questions in the Claude Code Quiz. To add new ones, edit `quiz.js` and add a
 **18. How do you add an MCP server to Claude Code?**
 
 - Add it to CLAUDE.md with @mcp syntax
-- **Run claude mcp add \<name\> \<command\>** ✓
+- **Run claude mcp add <name> <command>** ✓
 - Edit ~/.claude/config.json manually
 - Use the /mcp install command
 
@@ -248,10 +248,10 @@ All questions in the Claude Code Quiz. To add new ones, edit `quiz.js` and add a
 
 **23. How do you start Claude Code with a specific model?**
 
-- **--model \<model-id\>** ✓
-- --use \<model-id\>
-- --engine \<model-id\>
-- --claude \<model-id\>
+- **--model <model-id>** ✓
+- --use <model-id>
+- --engine <model-id>
+- --claude <model-id>
 
 > Use the --model flag followed by the model ID, e.g. `claude --model claude-opus-4-6`.
 
@@ -276,3 +276,5 @@ All questions in the Claude Code Quiz. To add new ones, edit `quiz.js` and add a
 - ToolRequest
 
 > PreToolUse fires before each tool call. Exiting with a non-zero code blocks the tool; exiting with zero allows it to proceed.
+
+---
