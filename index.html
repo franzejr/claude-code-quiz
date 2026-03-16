@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude Code Quiz</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>Claude Code Quiz</h1>
+      <p class="subtitle">Do you think you know Claude Code? Let's see...</p>
+      <p class="hero-note">Want to read all questions and answers first? <a href="https://github.com/franzejr/claude-code-quiz/blob/main/QUESTIONS.md" target="_blank" rel="noopener">Browse QUESTIONS.md</a></p>
+    </div>
+  </header>
+
+  <main>
+    <section id="quiz" class="section section-alt">
+      <div class="container">
+
+        <div id="quiz-container"></div>
+
+        <div id="quiz-results" class="quiz-results" style="display:none;">
+          <h3>Results</h3>
+          <p id="quiz-score"></p>
+          <div id="quiz-feedback"></div>
+          <button class="btn" onclick="resetQuiz()">Try Again</button>
+        </div>
+
+        <button id="quiz-submit" class="btn btn-primary" onclick="submitQuiz()" style="display:none;">Submit Answers</button>
+
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>Released under the <strong>MIT License</strong> &mdash; feel free to use, fork, and adapt.</p>
+      <p>Want to add more questions? Edit <code>quiz.js</code> and add entries to the <code>quizData</code> array.</p>
+      <p>Stay up to date: <a href="https://github.com/anthropics/claude-code/blob/main/CHANGELOG.md" target="_blank" rel="noopener">Claude Code CHANGELOG</a></p>
+    </div>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
